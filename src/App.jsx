@@ -40,6 +40,7 @@ import TaskList from './components/useReducer/TaskList'
 import { initialTasks } from './data/tasks'
 import taskReducer from './components/reducer/taskReducer'
 import Page from './components/useContext/Page'
+import TaskApp from './components/AvoidPropDriling/TaskApp'
   
 
  const contacts = [
@@ -182,7 +183,8 @@ function App() {
     <TaskList tasks={tasks} onChangeTask={handleTaskChange} onDelete={handleDeleteTask}/> */}
 
 
- <Page/>
+ {/* <Page/> */}
+ <TaskApp/>
     </div>
   )
 }
